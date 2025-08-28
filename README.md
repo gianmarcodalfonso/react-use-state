@@ -1,12 +1,18 @@
-# React + Vite
+# react-use-state
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Esercizio
 
-Currently, two official plugins are available:
+Oggi proviamo a usare lo stato di React!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dato un array di oggetti contenente i linguaggi del web e le loro descrizioni:
 
-## Expanding the ESLint configuration
+1 - Crea una lista di bottoni, uno per linguaggio.
+2 - Inserisci sotto una card che mostri il titolo e la descrizione del primo linguaggio nell’array.
+3 - Fare in modo che, cliccando uno dei bottoni, la card in basso visualizzi il linguaggio corrispondente e la relativa descrizione
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Bonus
+
+1 - Se nessun linguaggio è selezionato, la card del dettaglio mostra “nessun linguaggio selezionato”
+2 - Dare un colore diverso al bottone per cui il linguaggio è attualmente selezionato.
+3 - Scomporre la card dei dettagli in un componente a parte che mantenga le sue funzionalità
+4 - Scomporre i buttons in componenti a parte che mantengono tutte le funzionaliltà
