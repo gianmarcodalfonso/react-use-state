@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const languages = [
 	{
 		id: 1,
@@ -38,6 +40,7 @@ const languages = [
 ];
 
 function App() {
+	const [language, setLanguage] = useState(languages[0]);
 	return (
 		<>
 			<div className="container">
@@ -49,6 +52,12 @@ function App() {
 							</div>
 						);
 					})}
+					<div className="col-12">
+						<div className="card">
+							<h3>{language.title}</h3>
+							<p>{language.description}</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
