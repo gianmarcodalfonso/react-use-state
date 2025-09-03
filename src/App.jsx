@@ -48,7 +48,12 @@ function App() {
 					{languages.map((language) => {
 						return (
 							<div className="col-2">
-								<button className="btn btn-primary">{language.title}</button>
+								<button
+									className="btn btn-primary"
+									onClick={() => setLanguage(language)}
+								>
+									{language.title}
+								</button>
 							</div>
 						);
 					})}
