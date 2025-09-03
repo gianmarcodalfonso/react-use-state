@@ -45,20 +45,20 @@ function App() {
 		<>
 			<div className="container">
 				<div className="row">
-					{languages.map((language) => {
-						return (
-							<div className="col-2">
+					<div className="col-12">
+						{languages.map((language) => {
+							return (
 								<button
-									className="btn btn-primary"
+									className="btn btn-primary m-2"
 									onClick={() => setLanguage(language)}
 								>
 									{language.title}
 								</button>
-							</div>
-						);
-					})}
+							);
+						})}
+					</div>
 					<div className="col-12">
-						<div className="card">
+						<div className="card p-2">
 							<h3>{language.title}</h3>
 							<p>{language.description}</p>
 						</div>
